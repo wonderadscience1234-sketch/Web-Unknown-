@@ -2,177 +2,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beauty of Nature</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <title>Beauty of Nature | Explore Our Planet</title>
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f7f2;
-      color: #263b2d;
-    }
-
-    header {
-      padding: 22px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: white;
-    }
-
-    header h2 {
-      color: #287447;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #263b2d;
-      margin-left: 20px;
-    }
-
-    .hero {
-      min-height: 75vh;
-      background:
-        linear-gradient(#0005, #0006),
-        url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e")
-        center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      padding: 30px;
-    }
-
-    .hero h1 {
-      font-size: clamp(38px, 7vw, 75px);
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      line-height: 1.7;
-    }
-
-    .hero button {
-      margin-top: 25px;
-      padding: 14px 28px;
-      border: none;
-      border-radius: 30px;
-      background: #75b77c;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    section {
-      padding: 65px 8%;
-      text-align: center;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-      margin-top: 35px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 5px 20px #0001;
-    }
-
-    .card img {
-      width: 100%;
-      height: 210px;
-      object-fit: cover;
-    }
-
-    .card h3 {
-      padding: 18px;
-    }
-
-    footer {
-      background: #203c2b;
-      color: white;
-      padding: 25px;
-      text-align: center;
-    }
-  </style>
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <h2>Nature.</h2>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#discover">Discover</a>
-      <a href="#about">About</a>
-    </nav>
-  </header>
+    <!-- NAVIGATION -->
+    <header>
+        <h2>Nature.</h2>
 
-  <div class="hero" id="home">
-    <div>
-      <h1>Beauty of Nature</h1>
-      <p>
-        Discover the wonders of our planet.
-        Explore the beauty of forests, mountains
-        and oceans.
-      </p>
-      <button onclick="document.getElementById('discover').scrollIntoView({behavior:'smooth'})">
-        Explore Nature
-      </button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="forests.html">Forests</a>
+            <a href="mountains.html">Mountains</a>
+            <a href="oceans.html">Oceans</a>
+            <a href="wildlife.html">Wildlife</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div>
+            <h1>Beauty of Nature</h1>
+
+            <p>
+                Discover the wonders of our planet.
+                Explore breathtaking landscapes,
+                fascinating wildlife and the magic
+                of the natural world.
+            </p>
+
+            <a href="#discover" class="btn">
+                Explore Nature
+            </a>
+        </div>
     </div>
-  </div>
 
-  <section id="discover">
-    <h2>Discover the Natural World</h2>
-    <p>Explore the incredible beauty of our planet.</p>
 
-    <div class="cards">
+    <!-- DISCOVER SECTION -->
+    <section id="discover">
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" alt="Green forest">
-        <h3>Beautiful Forests</h3>
-      </div>
+        <h2>Discover the Natural World</h2>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Mountain lake">
-        <h3>Majestic Mountains</h3>
-      </div>
+        <p>
+            Every corner of our planet tells
+            a beautiful story.
+        </p>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21" alt="Ocean">
-        <h3>Wonderful Oceans</h3>
-      </div>
+        <div class="cards">
 
-    </div>
-  </section>
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e"
+                    alt="Beautiful green forest">
 
-  <section id="about">
-    <h2>Protect Our Planet</h2>
-    <p>
-      Nature is our home. Every forest, river,
-      mountain and living creature plays an
-      important role in our world.
-      Let's protect its beauty for future generations.
-    </p>
-  </section>
+                <h3>Forests</h3>
+                <a href="forests.html" class="btn">
+                    Explore
+                </a>
+            </div>
 
-  <footer>
-    <p>© 2026 Beauty of Nature | Explore. Discover. Protect.</p>
-  </footer>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
+                    alt="Beautiful mountains">
+
+                <h3>Mountains</h3>
+                <a href="mountains.html" class="btn">
+                    Explore
+                </a>
+            </div>
+
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"
+                    alt="Beautiful ocean">
+
+                <h3>Oceans</h3>
+                <a href="oceans.html" class="btn">
+                    Explore
+                </a>
+            </div>
+
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1472396961693-142e6e269027"
+                    alt="Wildlife in nature">
+
+                <h3>Wildlife</h3>
+                <a href="wildlife.html" class="btn">
+                    Explore
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+
+        <h2>Protect Our Planet</h2>
+
+        <p>
+            Nature is our home. Every forest,
+            river, mountain and living creature
+            plays an important role in our world.
+            Let's protect its beauty for future
+            generations.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Beauty of Nature</p>
+        <p>Explore. Discover. Protect.</p>
+    </footer>
 
 </body>
 </html>
